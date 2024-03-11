@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --card-surface-color: #f9f9ff;
+  --text-color: #121212;
+  --primmary: #F5B041;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background);
+}
+
+.card_surface_background {
+  background: var(--card-surface-color);
+}
+
+.table_surface_background:nth-child(2n) {
+  background: var(--card-surface-color);
+}
+
+.text_primmary_color {
+  color: var(--primmary);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
