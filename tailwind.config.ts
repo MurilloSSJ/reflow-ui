@@ -18,6 +18,7 @@ const config: Config = {
         primmary: {
           '100': '#F5B041',
           '500': '#ffd397',
+          '800': '#AE6F09'
         },
         dark: {
           "500": "#717171"

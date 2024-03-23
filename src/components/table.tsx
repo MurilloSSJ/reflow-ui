@@ -18,13 +18,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const Table = ({ title, header, tableItems }: TableProps) => {
     return (
-        <div className="w-full flex mt-20 rounded">
-            <table className="w-full table-auto self-center justify-self-center px-20 py-20 shadow-md rounded shadow shadow-slate-600">
+        <div className="w-full flex mt-5 rounded">
+            <table className="w-full table-auto self-center justify-self-center py-20 rounded">
                 <thead className="text-left card_surface_background rounded">
                     <tr>
                         {header.map((headerItem, index) => {
                             return (
-                                <th key={index} className={`px-4 py-2 ${k2d.className}`}>{headerItem}</th>
+                                <th key={index} className={`px-4 py-2 ${k2d.className} text-slate-500`}>{headerItem}</th>
                             )
                         })}
                     </tr>
@@ -32,7 +32,7 @@ export const Table = ({ title, header, tableItems }: TableProps) => {
                 <tbody>
                     {tableItems.map((tableItem, index) => {
                         return (
-                            <tr key={index} onClick={() => tableItem.onClick && tableItem.onClick(index)} className={`table_surface_background ${inter.className} rounded`}>
+                            <tr key={index} onClick={() => tableItem.onClick && tableItem.onClick(index)} className={`table_surface_background ${inter.className} rounded w-fit`}>
                                 {tableItem.row.map((rowItem, index) => {
                                     return (
                                         <td key={index} className="px-4 py-2">{rowItem}</td>

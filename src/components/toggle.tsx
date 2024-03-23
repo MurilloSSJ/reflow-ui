@@ -14,7 +14,7 @@ export const Toggle = ({ label, checked, onChange, size }: ToggleProps) => {
         onChange(event)
     }
     return (
-        <div className="flex items-center gap-x-5">
+        <div className="flex items-center gap-x-5 justify-center">
             {label && <span>{label}</span>}
             {<FaPowerOff className={`text-2xl ${checkedToogle ? "text-lime-500": "text-red-500"} hover:cursor-pointer`} onClick={handleToggle}/>}
         </div>

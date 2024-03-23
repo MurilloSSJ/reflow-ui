@@ -24,7 +24,7 @@ export default function CreateDagPage() {
         <div className='w-screen h-screen relative'>
             <HandleMenu />
             <ReactFlow nodes={nodes} edges={edges} nodeTypes={nodeTypes}>
-                <Background/>
+                <Background className='bg-slate-50'/>
                 <Controls/>
             </ReactFlow>
         </div>

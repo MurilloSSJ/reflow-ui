@@ -8,7 +8,7 @@ export const RunsIndicator = ({ runs, status }: RunsIndicatorProps) => {
     const borderColorFailed = runs > 0 ? "border-red-500" : "border-gray-500"
     return (
         <div className="">
-            <span className={`rounded-full h-6 w-6 flex items-center justify-center border-2 ${borderColor} font-light p-1 text-2xs text-gray-400`}>{runs}</span>
+            <span className={`rounded-full h-8 w-8 flex items-center justify-center border-2 ${borderColor} font-light p-1 text-2xs text-gray-400`}>{runs}</span>
         </div>
     );
 }

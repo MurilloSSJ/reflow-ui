@@ -10,4 +10,6 @@ export type Dag  = {
     lastRun: string 
     nextRun: string
     active: boolean
+    owners: string[]
+    principalLanguage: "golang" | "python"
 }
